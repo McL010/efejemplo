@@ -126,5 +126,20 @@ namespace Ejercicio01
         {
 
         }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            if (Regex.IsMatch(txtDeps.Text, @"^[a-zA-Z]+$"))
+            {
+                demoEF db = new demoEF();
+                Departamento dep = new Departamento();
+                dep.Nombre = txtDeps.Text;
+                
+
+                db.Departamentos.Add(dep);
+                db.SaveChanges();
+            }
+            else { MessageBox.Show("Verifique ingresar los campos correctos"); }
+        }
     }
 }

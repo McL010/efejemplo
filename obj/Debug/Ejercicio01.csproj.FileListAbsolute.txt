@@ -16,3 +16,4 @@ c:\users\administador\documents\visual studio 2012\Projects\Ejercicio01\Ejercici
 c:\users\administador\documents\visual studio 2012\Projects\Ejercicio01\Ejercicio01\obj\Debug\Ejercicio01.pdb
 c:\users\administador\documents\visual studio 2012\Projects\Ejercicio01\Ejercicio01\obj\Debug\Ejercicio01.Migrations.empleadoTabla.resources
 C:\Users\administador\documents\visual studio 2012\Projects\Ejercicio01\Ejercicio01\obj\Debug\Ejercicio01.Migrations.deps.resources
+C:\Users\administador\documents\visual studio 2012\Projects\Ejercicio01\Ejercicio01\obj\Debug\Ejercicio01.csprojResolveAssemblyReference.cache
