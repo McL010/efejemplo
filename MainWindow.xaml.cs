@@ -141,5 +141,19 @@ namespace Ejercicio01
             }
             else { MessageBox.Show("Verifique ingresar los campos correctos"); }
         }
+
+        private void Sueldo_Loaded(object sender, RoutedEventArgs e)
+        {
+            demoEF db = new demoEF();
+            CbDepartamentos.ItemsSource = db.Departamentos.ToList();
+            CbDepartamentos.DisplayMemberPath = "Nombre";
+            CbDepartamentos.SelectedValuePath = "id";
+
+        }
+
+        private void txtDeps_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
