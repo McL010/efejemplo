@@ -30,18 +30,19 @@ namespace Ejercicio01
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             //instanciar "Base de datos"
-            if (Regex.IsMatch(Idtext.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(Sueldo1.Text, @"^\d+$"))
-            {
+            //if (Regex.IsMatch(Idtext.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(Sueldo1.Text, @"^\d+$"))
+            //{
                 demoEF db = new demoEF();
                 Empleado emp = new Empleado();
                 emp.Nombre = Nombre.Text;
                 emp.Sueldo = int.Parse(Sueldo1.Text);
 
-                emp.Departamentoid= (int)CbDepartamentos.SelectedValue;
+                emp.Departamentoid = (int)CbDepartamentos.SelectedValue;
+                emp.id = (int)CbDepartamentos.SelectedValue;
                 db.Empleados.Add(emp);
                 db.SaveChanges();
-            }
-             else { MessageBox.Show("Verifique ingresar los campos correctos"); }
+            //}
+             //else { MessageBox.Show("Verifique ingresar los campos correctos"); }
            
 
           
@@ -153,6 +154,11 @@ namespace Ejercicio01
         }
 
         private void txtDeps_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Sueldo1_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }

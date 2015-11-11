@@ -11,5 +11,6 @@ namespace Ejercicio01.mibd
         public int id { get; set; }
         public string Nombre { get; set; }
         public int Sueldo { get; set; }
+        public virtual int Departamentoid { get; set; }
     }
 }
