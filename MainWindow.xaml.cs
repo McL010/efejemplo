@@ -37,7 +37,7 @@ namespace Ejercicio01
                 emp.Nombre = Nombre.Text;
                 emp.Sueldo = int.Parse(Sueldo1.Text);
 
-                emp.Departamento_id = (int)CbDepartamentos.SelectedValue;
+                emp.Departamentoid= (int)CbDepartamentos.SelectedValue;
                 db.Empleados.Add(emp);
                 db.SaveChanges();
             }
